@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.mainMain {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #ffcb04;
+}
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  /* object-fit: cover; */
+  height: 500px;
+  width: 350px;
+  margin: auto;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  background-color: #fefefe;
+}
+.left nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 50px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background-color: #f0f0f0;
+  border-radius: 28px;
+  width: 320px;
+  max-width: 100%;
+}
+.search-box i {
+  color: #7a7a7a;
+  font-size: 1.1rem;
+}
+.search-box input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  color: #222;
+}
+.body {
+  display: flex;
+  height: calc(100% - 100px);
+}
+
+.BLeft {
+  padding: 100px 150px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #512b2b; */
+}
+
+.BLeft h1 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+
+  font-size: 65px;
+  font-style: italic;
+  font-family: serif;
+  color: #12352f;
+}
+
+.BRight {
+  width: 75%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 25px;
+  padding-left: 20px;
+  /* background-color: #0b0606; */
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #b7322a;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.content {
+  width: 140px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.content p {
+  font-size: 16px;
+  color: #444;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  background-color: #b7322a;
+}
+.right h1 {
+  /* font-family:serif; */
+  font-size: 55px;
+  width: 300px;
+  text-align: left;
+  color: white;
+}
+.right .body {
+  /* background: #8a3a3a; */
+  height: calc(100% - 100px);
+      flex-direction:column;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+.right .body h1 {
+  font-size: 45px;
+  width: 200px;
+  margin: 30px 230px;
+}
+.h1{
+    width: 100%;
+}
+.right .middy{
+  /* background: #df5555; */
+  display: flex;
+  height: 200px;
+  width: 420px;
+  margin: -20px 140px;
+  padding: 18px;
+  border-radius: 8px;
+  color: #fff;
+}
+.Xfac{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-left: 45px;
+}
+.middy img{
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    object-fit: contain;
+}
+.middy .line{
+    width: 1px;
+    margin-top: 26px;
+    height: 110px;
+    margin-left: -30px;
+    background: #fff;
+}
+.middyR{
+    display:flex;
+    align-items:flex-start;
+    /* justify-content: center;
+    align-items: center; */
+    gap:15px;
+}
+
+.middyR h4{
+    width:auto;
+    line-height:1.5;
+    font-weight:300;
+}
+.middyR i{
+    font-size: 1.9rem;
+    color: #E1C199;
+    margin-right: 10px;
+}
+.viewRow{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:5px 0;
+    margin:5px 227px;
+    color: #e6e3e2;
+}
+
+.viewDet{
+    width:38px;
+    height:20px;
+    border-radius:20px;
+    background:#CB7D70;
+    position:relative;
+    
+}
+
+.viewDet::before{
+    content:"";
+    position:absolute;
+    top:2px;
+    left:2px;
+
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:white;
+}
+.right nav {
+  display: flex;
+  color: #FEECE9;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 50px;
+  /* background: #000; */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 200;
+}
+
+button{
+    text-align: center;
+    border:none;
+    border-radius: 6px;
+    padding: 8px 15px;
+    width: 250px;
+    background-color: #DBBD93;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+margin: auto 227px;
+}
