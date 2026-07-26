@@ -659,3 +659,17 @@ for (let obj of OBJECTT){
 
 }
 console.log(resssssssssssss)
+
+
+
+
+function outerr(){
+  var a=20
+  function inner(){
+    console.log(a)
+  }
+  return inner
+}
+let ourr=outerr()
+ourr()
+console.log(ourr())
