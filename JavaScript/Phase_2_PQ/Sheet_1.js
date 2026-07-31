@@ -892,3 +892,170 @@ forEach():
 - Used to perform an action (printing, updating, etc.).
 - Does not create a new array.
 */
+
+// # Part 5 — Objects Basics (76–90)
+
+// =======================================
+// 1. Create object for a student.
+// =======================================
+
+const student = {
+  name: "Kirtan",
+  age: 21,
+  course: "BCA"
+};
+
+console.log(student);
+
+// =======================================
+// 2. Access properties using dot notation.
+// =======================================
+
+console.log(student.name);
+console.log(student.age);
+
+// =======================================
+// 3. Access properties using bracket notation.
+// =======================================
+
+console.log(student["name"]);
+console.log(student["course"]);
+
+// =======================================
+// 4. Add new property dynamically.
+// =======================================
+
+student.city = "Mumbai";
+student["email"] = "kirtan@gmail.com";
+
+console.log(student);
+
+// =======================================
+// 5. Update existing property.
+// =======================================
+
+student.age = 22;
+student.course = "MCA";
+
+console.log(student);
+
+// =======================================
+// 6. Delete a property.
+// =======================================
+
+delete student.email;
+
+console.log(student);
+
+// =======================================
+// 7. Create object method.
+// =======================================
+
+const person = {
+  name: "Rahul",
+  greet: function () {
+    return "Hello!";
+  }
+};
+
+console.log(person.greet());
+
+// =======================================
+// 8. Use `this` keyword inside method.
+// =======================================
+
+const employee = {
+  name: "Amit",
+  salary: 50000,
+
+  details() {
+    console.log(`Name: ${this.name}`);
+    console.log(`Salary: ${this.salary}`);
+  }
+};
+
+employee.details();
+
+// =======================================
+// 9. Create nested object.
+// =======================================
+
+const company = {
+  name: "Google",
+
+  address: {
+    city: "Bangalore",
+    state: "Karnataka",
+
+    location: {
+      pincode: 560001
+    }
+  }
+};
+
+console.log(company);
+
+// =======================================
+// 10. Access deeply nested property.
+// =======================================
+
+console.log(company.address.location.pincode);
+
+// =======================================
+// 11. Destructure object properties.
+// =======================================
+
+const { name, age } = student;
+
+console.log(name);
+console.log(age);
+
+// =======================================
+// 12. Rename variables while destructuring.
+// =======================================
+
+const { name: studentName, course: studentCourse } = student;
+
+console.log(studentName);
+console.log(studentCourse);
+
+// =======================================
+// 13. Add default values during destructuring.
+// =======================================
+
+const { gender = "Male" } = student;
+
+console.log(gender);
+
+// =======================================
+// 14. Copy object using spread operator.
+// =======================================
+
+const studentCopy = { ...student };
+
+studentCopy.name = "Rohit";
+
+console.log(student);
+console.log(studentCopy);
+
+// =======================================
+// 15. Merge two objects.
+// =======================================
+
+const address = {
+  city: "Mumbai",
+  state: "Maharashtra"
+};
+
+const marks = {
+  math: 90,
+  science: 95
+};
+
+const mergedObject = {
+  ...student,
+  ...address,
+  ...marks
+};
+
+console.log(mergedObject);
